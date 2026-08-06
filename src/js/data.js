@@ -15,9 +15,9 @@ const dataSet = {};
  * 
  * @example '2018-02-20'
 */
-let dataSetVersion = '2025-11-01';
+let dataSetVersion = 'custom';
 
 /**
  * Image root, will be appended to the start of every image URL.
  */
-const imageRoot = 'https://i.imgur.com/';
+const imageRoot = '';
