@@ -1,0 +1,24 @@
+{
+  "name": "K-pop Bias Sorter",
+  "short_name": "K-pop Sorter",
+  "description": "Rank your favorite K-pop girl groups and idols.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#2c3e50",
+  "theme_color": "#2c3e50",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "src/assets/Nana.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "src/assets/Nana.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}

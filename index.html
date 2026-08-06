@@ -4,22 +4,38 @@
   <link rel="shortcut icon" href="src/assets/yinyang.ico" type="image/x-icon">
   <link rel="icon" href="src/assets/Nana.jpg" type="image/x-icon">
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="k7iBam-Qii9qkJBp2aJdCN8oiDxJas_uzPkKGuJsktg" />
   <meta name="og:site_name" content="K-pop group/idol ranking">
   <meta name="og:description" content="This page helps you rank your favorite girl groups and idols">
 
   <title>K-pop Bias Sorter</title>
 
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#2c3e50">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
   <link rel="stylesheet" type="text/css" href="src/css/reset.css">
   <link rel="stylesheet" type="text/css" href="src/css/styles.css">
 
   <script src="src/js/data.js"></script>
-  <script src="src/js/data/2025-11-01.js"></script>
+  <script src="src/js/data/custom.js"></script>
 
   <script src="src/js/html2canvas.min.js"></script>
   <script src="src/js/lz-string.min.js"></script>
   <script src="src/js/seedrandom.min.js"></script>
   <script src="src/js/main.js"></script>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js')
+          .then(reg => console.log('Service Worker registered!', reg.scope))
+          .catch(err => console.error('Service Worker registration failed:', err));
+      });
+    }
+  </script>
 </head>
 
 <body>
